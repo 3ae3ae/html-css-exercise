@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>회원 가입 페이지</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      img {
+        border: 1px solid black;
+      }
+      #header {
+        border-bottom: 3px solid blue;
+        margin: 5px 10px;
+        width: 800px;
+      }
+      #form {
+        margin-left: 10px;
+        width: 800px;
+      }
+      .item {
+      }
+      .col {
+        padding: 10px 0px;
+        border-bottom: 1px solid black;
+      }
+      .col1 {
+        display: inline-block;
+        width: 100px;
+        text-align: right;
+        margin-left: 50px;
+        margin-right: 10px;
+      }
+      .col2 {
+        display: inline-block;
+      }
+      input {
+        width: 150px;
+      }
+      #birth input {
+        max-width: 50px;
+      }
+      #last {
+        width: 800px;
+        height: 30px;
+        margin-top: 20px;
+        margin-left: 10px;
+        text-align: center;
+      }
+      #last img {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <img src="#" width="150px" height="40px" />
+    </div>
+    <form>
+      <ul id="form">
+        <li class="col">
+          <ul class="item">
+            <li class="col1">아이디</li>
+            <li class="col2">
+              <input type="text" />
+              <img
+                src="#"
+                style="vertical-align: middle"
+                width="70px"
+                height="16px"
+              />
+              영문, 숫자 조합으로 4~12글자 이내
+            </li>
+          </ul>
+        </li>
+        <li class="col">
+          <ul class="item">
+            <li class="col1">비밀번호</li>
+            <li class="col2">
+              <input type="password" /> 영문, 숫자 조합으로 4~12글자 이내
+            </li>
+          </ul>
+        </li>
+        <li class="col">
+          <ul class="item">
+            <li class="col1">비밀번호 확인</li>
+            <li class="col2">
+              <input type="password" />
+            </li>
+          </ul>
+        </li>
+        <li class="col">
+          <ul class="item">
+            <li class="col1">이름</li>
+            <li class="col2">
+              <input type="text" />
+            </li>
+          </ul>
+        </li>
+        <li class="col">
+          <ul class="item">
+            <li class="col1">생년월일</li>
+            <li class="col2" id="birth">
+              <input type="text" />년 <input type="text" />월
+              <input type="text" />일
+              <input type="radio" name="sm" title="음력" />음력
+              <input type="radio" name="sm" />양력
+            </li>
+          </ul>
+        </li>
+        <li class="col">
+          <ul class="item">
+            <li class="col1">이메일</li>
+            <li class="col2">
+              <input type="text" />
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </form>
+    <div id="last">
+      <img src="#" width="70px" height="15px" />
+      <img src="#" width="70px" height="15px" />
+    </div>
+  </body>
+</html>

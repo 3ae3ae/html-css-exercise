@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>너비 고정 2단 레이아웃</title>
+    <style>
+      #wrap {
+        width: 980px;
+        margin: 0px auto;
+      }
+      header {
+        background-color: gray;
+        height: 100px;
+      }
+      aside {
+        float: left;
+        background-color: yellow;
+        height: 300px;
+        width: 280px;
+      }
+      main {
+        float: left;
+        width: 700px;
+        height: 300px;
+        background-color: green;
+      }
+      footer {
+        clear: both;
+        height: 100px;
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <header>헤더 콘텐츠</header>
+      <aside>좌측 콘텐츠</aside>
+      <main>메인 콘텐츠</main>
+      <footer>푸터 콘텐츠</footer>
+    </div>
+  </body>
+</html>

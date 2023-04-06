@@ -55,7 +55,8 @@
       }
       #page header #top_menu .btn:hover,
       main .more:hover,
-      #notice .subject:hover {
+      #notice .subject:hover,
+      #sitemap div li:hover {
         text-decoration: underline;
       }
       .line {
@@ -130,6 +131,42 @@
       #notice .date {
         float: right;
       }
+      main #sitemap {
+        margin-top: 30px;
+      }
+      #sitemap div {
+        height: 150px;
+        float: left;
+        margin: 0px 20px;
+      }
+      #sitemap div h3 {
+        color: rgb(61, 172, 176);
+        font-size: 15px;
+      }
+      #sitemap div ul {
+        list-style-type: disc;
+      }
+      #sitemap div li {
+        font-size: 13px;
+        margin: 5px 3px;
+      }
+      footer {
+        clear: both;
+        padding: 20px 0 0 15px;
+      }
+      footer #address {
+        float: left;
+      }
+      footer #address ul {
+        margin-bottom: 15px;
+      }
+      footer #address ul #copyright {
+        color: gray;
+      }
+      footer #link {
+        text-align: right;
+        float: right;
+      }
     </style>
   </head>
   <body>
@@ -168,6 +205,7 @@
           </ul>
         </nav>
       </header>
+      <div class="clear"></div>
       <main>
         <section id="banner">
           <ul>
@@ -214,8 +252,96 @@
           <img src="#" width="280px" height="30px" style="margin-top: 10px" />
         </article>
         <div class="clear"></div>
+        <section id="sitemap">
+          <div>
+            <h3>손해 보험 상식</h3>
+            <ul>
+              <li>손해보험이란?</li>
+              <li>나에게 필요한 보험은?</li>
+              <li>보험약관의 중요성</li>
+              <li>손해보험의 특징</li>
+            </ul>
+          </div>
+          <div>
+            <h3>루바토 보험의 장점</h3>
+            <ul>
+              <li>보험료 저럼</li>
+              <li>신속한 처리 및 보상</li>
+              <li>만기 시 원리금 보장</li>
+            </ul>
+          </div>
+          <div>
+            <h3>고객센터</h3>
+            <ul>
+              <li>전국 지점 안내</li>
+              <li>손해배상 안내</li>
+              <li>손해보험 FAQ</li>
+              <li>질문과 답변</li>
+            </ul>
+          </div>
+          <div>
+            <h3>마이페이지</h3>
+            <ul>
+              <li>계약 조회/변경</li>
+              <li>보험 계약 갱신</li>
+              <li>보험료 납입</li>
+              <li>증명서 발급</li>
+            </ul>
+          </div>
+          <div>
+            <h3>가입 안내</h3>
+            <ul>
+              <li>공인인증센터</li>
+              <li>인증서 발급/갱신</li>
+              <li>인증서 폐기</li>
+              <li>웹 로그인</li>
+            </ul>
+          </div>
+          <div>
+            <h3>회사 소개</h3>
+            <ul>
+              <li>기업 소개</li>
+              <li>찾아오시는 길</li>
+            </ul>
+          </div>
+        </section>
+        <div class="clear"></div>
         <div class="line"></div>
       </main>
+      <footer>
+        <article id="address">
+          <ul id="footer_menu">
+            <li>개인정보 취급방침 | 이용 안내 | 이메일 무단수집 거부</li>
+            <li>
+              서민금융119서비스 | 보험범죄 신고 | 전자 민원 접수 보험약관 안내 |
+              금융사기신고센터
+            </li>
+          </ul>
+          <ul id="company_info">
+            <li>루바토 손해보험(주)</li>
+            <li>대표이사: 홍길동</li>
+            <li>주소: 서울시 강남구 가나다동 123번지</li>
+            <li>전화: 010-1234-1234</li>
+            <li id="copyright">
+              Copyright by Rubato Company All Rights Reserved.
+            </li>
+          </ul>
+        </article>
+        <article id="link">
+          <h3>고객센터 1234-1234</h3>
+          <select>
+            <option>네이버</option>
+            <option>다음</option>
+            <option>구글</option>
+          </select>
+          <div id="icons">
+            <img src="#" width="20px" height="20px" />
+            <img src="#" width="20px" height="20px" />
+            <img src="#" width="20px" height="20px" />
+          </div>
+        </article>
+      </footer>
     </div>
+    <!--page-->
   </body>
 </html>

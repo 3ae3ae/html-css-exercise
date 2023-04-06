@@ -53,7 +53,9 @@
         display: inline;
         color: black;
       }
-      #page header #top_menu .btn:hover {
+      #page header #top_menu .btn:hover,
+      main .more:hover,
+      #notice .subject:hover {
         text-decoration: underline;
       }
       .line {
@@ -61,7 +63,6 @@
         border-top: 1px solid #6b6b6b6b;
       }
       #page header nav li {
-        display: inline-block;
         float: left;
       }
       #page header nav .item {
@@ -74,6 +75,60 @@
         padding: 10px 0px;
         width: 156px;
         border-bottom: 4px solid seagreen;
+      }
+      #page main {
+        margin-top: 10px;
+        float: left;
+        width: 100%;
+      }
+      #banner {
+        height: 110px;
+        background-color: rgb(61, 172, 176);
+      }
+      #banner ul {
+        margin-top: 5px;
+      }
+      #banner li {
+        display: inline-block;
+        margin-top: 20px;
+        margin-left: 35px;
+      }
+      main article {
+        width: 280px;
+        height: 150px;
+        float: left;
+        margin-top: 20px;
+      }
+      main #notice,
+      main #faq {
+        margin-left: 30px;
+      }
+      main .head {
+        font-size: 15px;
+        font-weight: bold;
+        float: left;
+        margin: 10px 5px;
+      }
+      main .more {
+        font-size: 10px;
+        color: gray;
+        float: right;
+        font-weight: bold;
+        margin-top: 15px;
+      }
+      #notice ul {
+        height: 100px;
+        list-style-type: none;
+        font-size: 12px;
+      }
+      #notice li {
+        margin: 5px 0px;
+      }
+      #notice .subject {
+        float: left;
+      }
+      #notice .date {
+        float: right;
       }
     </style>
   </head>
@@ -113,6 +168,54 @@
           </ul>
         </nav>
       </header>
+      <main>
+        <section id="banner">
+          <ul>
+            <li><img src="#" width="250px" height="70px" /></li>
+            <li><img src="#" width="250px" height="70px" /></li>
+            <li><img src="#" width="250px" height="70px" /></li>
+          </ul>
+        </section>
+        <article id="customer">
+          <div class="head">고객센터</div>
+          <div class="more">더보기 ▶</div>
+          <div class="clear"></div>
+          <img src="#" width="280px" height="100px" />
+        </article>
+        <article id="notice">
+          <div class="head">공지사항</div>
+          <div class="more">더보기 ▶</div>
+          <div class="clear"></div>
+          <ul>
+            <li>
+              <div class="subject">새로운 상품의 출시를 알려드립니다.</div>
+              <div class="date">2023-04-06</div>
+              <div class="clear"></div>
+            </li>
+            <li>
+              <div class="subject">새로운 상품의 출시를 알려드립니다.</div>
+              <div class="date">2023-04-06</div>
+              <div class="clear"></div>
+            </li>
+            <li>
+              <div class="subject">새로운 상품의 출시를 알려드립니다.</div>
+              <div class="date">2023-04-06</div>
+              <div class="clear"></div>
+            </li>
+            <li>
+              <div class="subject">새로운 상품의 출시를 알려드립니다.</div>
+              <div class="date">2023-04-06</div>
+              <div class="clear"></div>
+            </li>
+          </ul>
+        </article>
+        <article id="faq">
+          <img src="#" width="280px" height="80px" style="margin-top: 20px" />
+          <img src="#" width="280px" height="30px" style="margin-top: 10px" />
+        </article>
+        <div class="clear"></div>
+        <div class="line"></div>
+      </main>
     </div>
   </body>
 </html>
